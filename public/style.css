@@ -1,14 +1,9 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins;
-}
-
 body{
+margin:0;
+font-family:Poppins;
 background:#0b1220;
 color:white;
-overflow-x:hidden;
+text-align:center;
 }
 
 .bg{
@@ -16,7 +11,7 @@ position:fixed;
 width:500px;
 height:500px;
 background:linear-gradient(135deg,#00b4ff,#8b5cf6);
-filter:blur(150px);
+filter:blur(160px);
 opacity:.3;
 top:-100px;
 left:-100px;
@@ -28,65 +23,32 @@ display:flex;
 justify-content:space-between;
 padding:20px;
 background:rgba(255,255,255,0.05);
-backdrop-filter:blur(20px);
-border-bottom:1px solid rgba(255,255,255,0.1);
-}
-
-.hero{
-text-align:center;
-padding:40px 20px;
-}
-
-.hero h2{
-font-size:32px;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:15px;
 padding:20px;
 }
 
 .card{
 background:rgba(255,255,255,0.06);
-backdrop-filter:blur(25px);
-border:1px solid rgba(255,255,255,0.1);
-border-radius:20px;
 padding:20px;
-text-align:center;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.icon{
-font-size:40px;
+border-radius:15px;
 }
 
 button{
 margin-top:10px;
-padding:10px 15px;
+padding:10px;
 border:none;
-border-radius:12px;
-background:linear-gradient(135deg,#00b4ff,#8b5cf6);
+border-radius:10px;
+background:#00b4ff;
 color:white;
 cursor:pointer;
-font-weight:bold;
-}
-
-.result{
-padding:20px;
-}
-
-.barbox{
-margin:15px 0;
 }
 
 .bar{
-width:100%;
 height:10px;
 background:rgba(255,255,255,0.1);
 border-radius:20px;
@@ -97,5 +59,5 @@ overflow:hidden;
 height:100%;
 width:0%;
 background:linear-gradient(90deg,#00b4ff,#8b5cf6);
-transition:.5s;
+transition:.4s;
 }
