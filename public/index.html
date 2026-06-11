@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MotoVote Web Service</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>MotoVote Malaysia 🏍️</h1>
+
+<div class="cards">
+
+  <div class="card">
+    <h2>Y15ZR</h2>
+    <p id="y15count">0 Undi</p>
+    <button onclick="vote('Y15ZR')">Undi</button>
+  </div>
+
+  <div class="card">
+    <h2>RS150R</h2>
+    <p id="rscount">0 Undi</p>
+    <button onclick="vote('RS150R')">Undi</button>
+  </div>
+
+  <div class="card">
+    <h2>RXZ</h2>
+    <p id="rxzcount">0 Undi</p>
+    <button onclick="vote('RXZ')">Undi</button>
+  </div>
+
+</div>
+
+<h2>Result</h2>
+<p>Y15ZR: <span id="y15percent">0%</span></p>
+<p>RS150R: <span id="rspercent">0%</span></p>
+<p>RXZ: <span id="rxzpercent">0%</span></p>
+
+<div id="ranking"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
