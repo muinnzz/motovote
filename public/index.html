@@ -3,42 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MotoVote Web Service</title>
+<title>MotoVote Premium</title>
+
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<h1>MotoVote Malaysia 🏍️</h1>
+<div class="bg"></div>
 
-<div class="cards">
+<header class="nav">
+  <h1>🏍️ MOTOVOTE</h1>
+  <button class="login">Login</button>
+</header>
+
+<section class="hero">
+  <h2>Undian Moto Premium Malaysia</h2>
+  <p>Pilih motor kegemaran & lihat ranking live</p>
+</section>
+
+<section class="grid">
 
   <div class="card">
-    <h2>Y15ZR</h2>
-    <p id="y15count">0 Undi</p>
-    <button onclick="vote('Y15ZR')">Undi</button>
+    <div class="icon">🏍️</div>
+    <h3>Yamaha Y15ZR</h3>
+    <p id="y15count">0 undi</p>
+    <button onclick="vote('Y15ZR')">UNDI</button>
   </div>
 
   <div class="card">
-    <h2>RS150R</h2>
-    <p id="rscount">0 Undi</p>
-    <button onclick="vote('RS150R')">Undi</button>
+    <div class="icon">🏍️</div>
+    <h3>Honda RS150R</h3>
+    <p id="rscount">0 undi</p>
+    <button onclick="vote('RS150R')">UNDI</button>
   </div>
 
   <div class="card">
-    <h2>RXZ</h2>
-    <p id="rxzcount">0 Undi</p>
-    <button onclick="vote('RXZ')">Undi</button>
+    <div class="icon">🏍️</div>
+    <h3>Yamaha RXZ</h3>
+    <p id="rxzcount">0 undi</p>
+    <button onclick="vote('RXZ')">UNDI</button>
   </div>
 
-</div>
+</section>
 
-<h2>Result</h2>
-<p>Y15ZR: <span id="y15percent">0%</span></p>
-<p>RS150R: <span id="rspercent">0%</span></p>
-<p>RXZ: <span id="rxzpercent">0%</span></p>
+<section class="result">
+  <h2>Live Ranking 🔥</h2>
 
-<div id="ranking"></div>
+  <div class="barbox">
+    <span>Y15ZR</span>
+    <div class="bar"><div id="barY15"></div></div>
+    <span id="y15percent">0%</span>
+  </div>
+
+  <div class="barbox">
+    <span>RS150R</span>
+    <div class="bar"><div id="barRS"></div></div>
+    <span id="rspercent">0%</span>
+  </div>
+
+  <div class="barbox">
+    <span>RXZ</span>
+    <div class="bar"><div id="barRXZ"></div></div>
+    <span id="rxzpercent">0%</span>
+  </div>
+
+</section>
 
 <script src="script.js"></script>
 </body>
